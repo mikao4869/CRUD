@@ -1,8 +1,17 @@
-import React from 'react'
+import React from {React,useState};
 
 function Main() {
+const [write,setwrite]=useState("");
+
+  function handleclick(){
+    console.log("write")
+  }
+
   return (
-    <div>Main</div>
+    <>
+    <input placeholder='write' value={write}required></input>
+    <button onClick={handleclick}>submit</button>
+    </>
   )
 }
 

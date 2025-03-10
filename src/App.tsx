@@ -3,7 +3,7 @@ import Main from "./pages/Main";
 function App() {
   return (
     <>
-      <h1>안녕</h1>
+      <h1>CRUD</h1>
       <Main />
     </>
   );
