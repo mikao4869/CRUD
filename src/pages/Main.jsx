@@ -1,16 +1,22 @@
-import React from {React,useState};
+import React, { useState } from 'react';
 
 function Main() {
 const [write,setwrite]=useState("");
 
-  function handleclick(){
-    console.log("write")
+  function handleInput(event){
+    const value=event.target.value;
+    setwrite(value);
   }
+
+  function handleSubmit(){
+    value.innerText
+  }
+
 
   return (
     <>
-    <input placeholder='write' value={write}required></input>
-    <button onClick={handleclick}>submit</button>
+      <input placeholder='write' onChange={handleInput} value={write} required></input>
+      <button onClick={handleSubmit}>submit</button>
     </>
   )
 }
